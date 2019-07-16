@@ -1,0 +1,24 @@
+package com;
+
+import java.util.Scanner;
+
+/*
+ * MSFATA Programming Help
+ */
+public class StringReverse {
+	/*
+	 * reversing string
+	 */
+	public static String FirstReverse(String str) {
+		return new StringBuilder(str).reverse().toString();
+	}
+
+	/*
+	 * testing it
+	 */
+	public static void main(String[] args) {
+		System.out.println("write a text to see the reverse");
+		Scanner s = new Scanner(System.in);
+		System.out.print(FirstReverse(s.nextLine()));
+	}
+}
